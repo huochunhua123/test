@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+<link rel="stylesheet" type="text/css"
+	href="scripts/themes/default/easyui.css" />
+<script type="text/javascript" src="scripts/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="scripts/common.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+#login {
+	background-color: #eee;
+	min-height: 1000px;
+}
+
+.login-header {
+	background-color: #feb73b;
+}
+
+.logo-content {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#form-login {
+	width: 340px;
+	margin: 65px auto;
+	padding: 0 20px;
+	border: 5px solid #e1e1e1;
+	background-color: #fff;
+}
+
+#form {
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.item {
+	margin: 10px;
+}
+
+.item label {
+	display: inline-block;
+	width: 100px;
+}
+
+.text {
+	background-color: #fff;
+	width: 200px;
+	height: 25px;
+	border: 1px solid #ccc;
+	line-height: 25px;
+}
+
+.login-btn {
+	background: #feb73b;
+	color: #fff;
+	height: 30px;
+	width: 300px;
+	border: none;
+	border-radius: 5px;
+}
+</style>
+</head>
+<!--顶部开始-->
+
+	<body>
+		<div id="login">
+			<div class="login-header">
+				<div class="logo-content">
+					<div id="logo">
+						<img src="images/logo.png" />
+					</div>
+				</div>
+
+			</div>
+			<div id="task"></div>
+			<div id="form-login">
+				<div id="form">
+
+					<form id="person" method="post">
+						<div class="item">
+							<label><strong>登录名：</strong></label><input id="name" name="name"
+								class="easyui-validatebox" required="true"
+								validType="length[1,11]" missingMessage="不能为空"
+								invalidMessage="登录名为11位以下" type="text" />
+						</div>
+						<div class="item">
+							<label><strong>密码：</strong></label><input id="password"
+								name="password" class="easyui-validatebox" type="password"
+								value="" />
+						</div>
+						<div class="item">
+							<input type="button"  class="login-btn btn-hello" value="登录" id="PopSubmit2" />
+						</div>
+					</form>
+				</div>
+			</div>	
+			<!--页尾部分开始-->
+	</body>
+</html>
+
